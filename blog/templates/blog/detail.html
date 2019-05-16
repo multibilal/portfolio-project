@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -45,8 +44,8 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">Linkedin</a>
                 <a class="nav-item nav-link" href="#">Git</a>
-                <a class="nav-item nav-link" href="#">Blog</a>
-                <a class="nav-item nav-link" href="{% static 'Resume.pdf'%}">Resume</a>
+                <a class="nav-item nav-link active" href="#">Blog</a>
+                <a class="nav-item nav-link" href="#">Resume</a>
             </div>
         </div>
     </nav>
@@ -54,46 +53,33 @@
 
 <main role="main">
 
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Hi I'm Bilal Ali</h1>
-            <p class="lead text-muted">My name is Syed Mohd Bilal Ali and I'm a Biginner in django and I Love it!!</p>
-            <img src="{% static 'Bilal.jpg' %}"  width =200 class="rounded-circle">
-            <p>
-                <a href="mailto:smbaz1995@gmail.com" class="btn btn-primary my-2">Email Me</a>
-            </p>
+    <div class="container">
+        <h1 class="text-center pt-3">{{detailblog.title}}</h1>
+        <br>
+        <br>
+        <hr>
+        <div class="container-fluid">
+            <img class="img-fluid" src="{{ detailblog.image.url }}"/>
         </div>
-    </section>
+        <div class="card-body">
 
-    <div class="album py-5 bg-light">
-        <div class="container">
-
-            <div class="row">
-
-             {% for job in jobs.all %}
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="{{ job.image.url }}"/>
-                        <div class="card-body">
-                            <p class="card-text">{{ job.summary }}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">{% now 'jS \o\f F Y' %}</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             {% endfor %}
-
+            <h3><a class="card-text" href="#">{{ blog.title }}</a></h3>
+            {{detailblog.body | linebreaksbr}}
+            <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted">{{blog.pub_date_pretty}}</small>
             </div>
         </div>
+        <hr>
     </div>
+
+
 
 </main>
 
 <footer class="text-muted">
     <div class="container text-center">
         <p> © Bilal Ali {% now "Y" %}</p>
- </div>
+    </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

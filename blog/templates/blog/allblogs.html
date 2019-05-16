@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -45,8 +44,8 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">Linkedin</a>
                 <a class="nav-item nav-link" href="#">Git</a>
-                <a class="nav-item nav-link" href="#">Blog</a>
-                <a class="nav-item nav-link" href="{% static 'Resume.pdf'%}">Resume</a>
+                <a class="nav-item nav-link active" href="#">Blog</a>
+                <a class="nav-item nav-link" href="#">Resume</a>
             </div>
         </div>
     </nav>
@@ -54,39 +53,26 @@
 
 <main role="main">
 
-    <section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Hi I'm Bilal Ali</h1>
-            <p class="lead text-muted">My name is Syed Mohd Bilal Ali and I'm a Biginner in django and I Love it!!</p>
-            <img src="{% static 'Bilal.jpg' %}"  width =200 class="rounded-circle">
-            <p>
-                <a href="mailto:smbaz1995@gmail.com" class="btn btn-primary my-2">Email Me</a>
-            </p>
-        </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-        <div class="container">
-
-            <div class="row">
-
-             {% for job in jobs.all %}
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="{{ job.image.url }}"/>
+    <div class="container">
+           <h1 class="text-center pt-3">Mystic Vaults</h1>
+            <h2>Latest Post</h2>
+        <br>
+        <br>
+        <hr>
+        {% for blog in blogs.all %}
                         <div class="card-body">
-                            <p class="card-text">{{ job.summary }}</p>
+                            <h3><a class="card-text" href="{% url 'detail' %}">{{ blog.title }}</a></h3>
+                                {{blog.summary}}
                             <div class="d-flex justify-content-between align-items-center">
-                                <small class="text-muted">{% now 'jS \o\f F Y' %}</small>
+                                <small class="text-muted">{{blog.pub_date_pretty}}</small>
                             </div>
+                            <img class="img-fluid" height=200 width=500 src="{{ blog.image.url }}"/>
                         </div>
-                    </div>
-                </div>
-             {% endfor %}
-
-            </div>
-        </div>
+                        <hr>
+        {% endfor %}
     </div>
+
+
 
 </main>
 
