@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d196fb7-fd39-4099-bd79-01140f3bd6f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="1d196fb7-fd39-4099-bd79-01140f3bd6f1" name="Default Changelist" comment="local settings changes" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="85" column="22" lean-forward="true" selection-start-line="78" selection-end-line="87" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -173,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558006611035</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="local settings changes">
+      <created>1558083027922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558083027922</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -189,7 +193,7 @@
     <frame x="47" y="25" width="1319" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24691358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24691358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.2496124" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,8 +203,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50157726" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4984227" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -270,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ignore static files" />
     <MESSAGE value="All strings connected now!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="All strings connected now!!" />
+    <MESSAGE value="local settings changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="local settings changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/media/images/default.jpg">
@@ -419,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+        <state relative-caret-position="240">
+          <caret line="85" column="22" lean-forward="true" selection-start-line="78" selection-end-line="87" selection-end-column="5" />
         </state>
       </provider>
     </entry>
