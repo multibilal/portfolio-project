@@ -25,7 +25,7 @@ SECRET_KEY = 'mqp%vir+al%va@5h7z1ez=mjb_rf4q7qh&x8#2%w$=f47n#_s='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.bilal.com']
 
 
 # Application definition
@@ -135,7 +135,7 @@ STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL='/coolstuff/'
+MEDIA_URL='/media/'
 
 try:
     from .local_settings import *
